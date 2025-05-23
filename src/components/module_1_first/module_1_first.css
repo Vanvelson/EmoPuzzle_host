@@ -74,14 +74,19 @@ h3 {
 }
 
 .variables {
+  margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
+  width: 1440px;
+  gap: 30px;
 }
 
 .variables_btn {
   position: relative;
+  width: 300px;
 }
 
 .btn_next {

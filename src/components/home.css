@@ -9,6 +9,9 @@
 body{
   overflow-x: hidden;
 }
+header{
+  width: 100%;
+}
 .container{
   max-width: 1440px;
 }
@@ -299,10 +302,21 @@ li:hover {
   background-color: #fdde06;
   font-size: 32px;
   border: none;
-  left: -80px;
+  left: 0;
   top: 50px;
 }
-
+.circle_number_2{
+  position: absolute;
+  border-radius: 50%;
+  width: 99px;
+  height: 99px;
+  color: #02bbe1;
+  background-color: #fdde06;
+  font-size: 32px;
+  border: none;
+  left: 0;
+  top: 50px;
+}
 .works_block2 {
   position: relative;
   display: flex;

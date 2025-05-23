@@ -305,7 +305,7 @@ const Home = () => {
             </p>
           </div>
           <div className="works_block3">
-            <button className="circle_number_3">3</button>
+            <button className="circle_number">3</button>
             <p>
               <span className="color_blue">
                 {translations[language].decisionMaking}

@@ -82,7 +82,7 @@ const Bella = () => {
     }
   };
 
-  if (loading || !task) return <div className="container">Завантаження...</div>;
+  if (loading || !task) return <div className="container">Loading...</div>;
   if (error) return <div className="container">{error}</div>;
 
   return (
@@ -118,7 +118,7 @@ const Bella = () => {
 
         <h2>{task.question}</h2>
 
-        <div className="variables">
+        <div className="variables container">
           {shuffledAnswers.map((option, idx) => {
             const gifSrc = getGifForEmotion(option.label);
             return (
