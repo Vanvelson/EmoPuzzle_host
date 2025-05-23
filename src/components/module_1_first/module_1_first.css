@@ -74,7 +74,7 @@ h3 {
 }
 
 .variables {
-  margin-top: 20px;
+  margin-top: 70px;
   margin-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -85,33 +85,30 @@ h3 {
 }
 
 .variables_btn {
-  position: relative;
   width: 300px;
 }
 
-.btn_next {
-  display: flex;
-  justify-content: flex-end;
-  position: absolute;
-  padding: 30px 50px;
-  top: 120px;
-}
-
-.left_variant,
-.right_variant {
-  display: flex;
-  flex-direction: column;
-  gap: 82px;
-}
-
 .btn_variant {
+  position: relative;
   padding: 27px 343px 27px 27px;
   border-radius: 20px;
   border: none;
   font-size: 22px;
   cursor: pointer;
+  width: 500px;
   transition: background-color 0.2s ease;
 }
+
+.gif_images{
+  position: absolute;
+  height: 320px;
+  width: auto;
+  bottom: -90px;
+  right: 0;
+  z-index: 1;
+}
+
+
 
 .btn_variant:hover {
   background-color: #7b8085;

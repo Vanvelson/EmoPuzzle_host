@@ -4,18 +4,17 @@ import "./module_1_first.css";
 
 const TOTAL_QUESTIONS = 5;
 
+const characters = ["galya", "ivan", "milana", "sasha"];
+const emotions = ["joy", "anger", "sadness", "shame", "surprise"];
 
-const emotionGifs = {
-  sadness: "../public/images/gif/module_1/Sadness.gif",
-  surprise: "../public/images/gif/first_level/Surprise.gif",
-  joy: "../public/images/gif/first_level/Joy.gif",
-  anger: "../public/images/gif/first_level/Anger.gif",
-  shame: "../public/images/gif/first_level/Shame.gif",
+const getCharacterForQuestion = (questionIndex) => {
+  return characters[questionIndex % characters.length];
 };
 
-const getGifForEmotion = (label) => {
-  const key = label.trim().toLowerCase();
-  return emotionGifs[key] || null;
+const getGifForEmotion = (character, emotionLabel) => {
+  const emotionKey = emotionLabel.trim().toLowerCase();
+  if (!emotions.includes(emotionKey)) return null;
+  return `/images/characters/${character}/${character.slice(0, 3)}_${emotionKey}.gif`;
 };
 
 const Bella = () => {
@@ -85,6 +84,8 @@ const Bella = () => {
   if (loading || !task) return <div className="container">Loading...</div>;
   if (error) return <div className="container">{error}</div>;
 
+  const currentCharacter = getCharacterForQuestion(questionCount);
+
   return (
     <div className={transition ? "fade-out" : ""}>
       <nav className="container">
@@ -120,7 +121,7 @@ const Bella = () => {
 
         <div className="variables container">
           {shuffledAnswers.map((option, idx) => {
-            const gifSrc = getGifForEmotion(option.label);
+            const gifSrc = getGifForEmotion(currentCharacter, option.label);
             return (
               <button
                 key={idx}
@@ -136,12 +137,7 @@ const Bella = () => {
                 {gifSrc && (
                   <img
                     src={gifSrc}
-                    style={{
-                      width: "24px",
-                      height: "24px",
-                      marginRight: "8px",
-                      verticalAlign: "middle",
-                    }}
+                    className="gif_images"
                   />
                 )}
                 {option.label}
