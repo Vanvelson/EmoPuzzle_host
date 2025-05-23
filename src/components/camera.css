@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish";
+}
+
+
+
+
+h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.scene-description{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+h3{
+    font-size: 32px;
+    text-align: start;
+    margin-top: 20px;
+}
+.first_story{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+
+
+.text_block{
+    width: 597px;
+    font-size: 22px;
+    background-color: #DCECFC;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 54px 26px 54px 26px;
+}
+
+.close_btn{
+    padding: 10px 20px 10px 20px;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+}
+.close_btn:hover{
+    background-color: #DCECFC;
+}
+.wrong_btn:active{
+    background-color: red;
+}
+
+.correct_variant:active{
+    background-color: green;
+}
+
+.camera_feed_container {
+    width: 100%;
+    max-width: 640px;
+    margin: 20px auto;
+    border: 6px solid #ccc;
+    border-radius: 18px;
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  .camera_video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+

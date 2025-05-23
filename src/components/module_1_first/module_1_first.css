@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 32px;
+  text-align: end;
+  margin-top: 20px;
+}
+
+.first_story {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  gap: 20px;
+}
+
+.text_block {
+  width: 597px;
+  font-size: 22px;
+  background-color: #dcecfc;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 54px 26px;
+}
+
+.text_block p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.image_wrapper {
+  background-color: #f4f9ff;
+  padding: 24px;
+  border-radius: 20px;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image_fox2 {
+  max-width: 100%;
+  max-height: 350px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.image_fox2:hover {
+  transform: scale(1.03);
+}
+
+.modal_h3 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.variables {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.variables_btn {
+  position: relative;
+}
+
+.btn_next {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  padding: 30px 50px;
+  top: 120px;
+}
+
+.left_variant,
+.right_variant {
+  display: flex;
+  flex-direction: column;
+  gap: 82px;
+}
+
+.btn_variant {
+  padding: 27px 343px 27px 27px;
+  border-radius: 20px;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn_variant:hover {
+  background-color: #7b8085;
+  color: white;
+}
+
+.close_btn {
+  padding: 10px 20px;
+  background-color: aliceblue;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.close_btn:hover {
+  background-color: #dcecfc;
+}
+
+.wrong_btn:active {
+  background-color: red;
+}
+
+.correct_variant:active {
+  background-color: green;
+}
+
+.container {
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
+}
