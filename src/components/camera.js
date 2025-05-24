@@ -276,10 +276,10 @@ export default function Module2Camera({ initialStoryIndex = 1 }) {
         }}
       >
         <div className="footer_text">
-          <p>© 2025 EmoPuzzle. Усі права захищено.</p>
-          <p>Допомагаємо дітям відчувати світ серцем.</p>
+          <p>© 2025 EmoPuzzle. All rights reserved.</p>
+          <p>We help children experience the world with their hearts.</p>
           <p>
-            Зв'яжіться з нами: email@example.com | Телефон: +380 ХХХ ХХХ ХХХХ
+            Contact us: email@example.com | Phone: +380 XXX XXX XXX
           </p>
         </div>
         <p className="background_text" style={{ marginTop: 10, opacity: 0.1 }}>

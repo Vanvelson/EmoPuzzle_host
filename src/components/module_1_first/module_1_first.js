@@ -96,9 +96,9 @@ const Bella = () => {
           onClick={() => navigate("/")}
         />
         <ul>
-          <li>Як це працює?</li>
-          <li>Мобільний застосунок</li>
-          <li>Почати навчання</li>
+          <li>How does it work?</li>
+          <li>Mobile application</li>
+          <li>Start learning</li>
         </ul>
       </nav>
 
@@ -150,13 +150,13 @@ const Bella = () => {
           <div className="modal">
             <div className="modal-content">
               <div className="inmodal">
-                <h3 className="modal_h3">Чому має бути саме ця відповідь?</h3>
+                <h3 className="modal_h3">Why should this be the answer?</h3>
                 <p>{task.explanation}</p>
                 <button
                   className="close_btn"
                   onClick={() => setShowModal(false)}
                 >
-                  Закрити
+                  Close
                 </button>
               </div>
             </div>
@@ -166,10 +166,10 @@ const Bella = () => {
 
       <footer className="container footer">
         <div className="footer_text">
-          <p>© 2025 EmoPuzzle. Усі права захищено.</p>
-          <p>Допомагаємо дітям відчувати світ серцем.</p>
+          <p>© 2025 EmoPuzzle. All rights reserved.</p>
+          <p>We help children experience the world with their hearts.</p>
           <p>
-            Зв'яжіться з нами: email@example.com | Телефон: +380 ХХХ ХХХ ХХХХ
+            Contact us: email@example.com | Phone: +380 XXX XXX XXX
           </p>
         </div>
         <p className="background_text">EmoPuzzle</p>
