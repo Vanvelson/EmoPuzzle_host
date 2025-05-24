@@ -425,3 +425,24 @@ footer {
   right: 0px;
   top: 20px;
 }
+@media (max-width: 768px) {
+  .modal-content {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 360px) {
+  .wrapper,
+  .container {
+    max-width: 100%;
+    padding: 0 8px;
+  }
+
+  .modal-content {
+    padding: 12px;
+  }
+
+  .inmodal {
+    gap: 10px;
+  }
+}
