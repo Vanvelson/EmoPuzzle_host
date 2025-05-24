@@ -149,5 +149,109 @@ h3 {
   opacity: 1;
 }
 
+@media (max-width: 480px) {
+  nav.container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
+  nav.container ul {
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
+  }
 
+  .logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .back-button {
+    font-size: 18px;
+    padding: 5px 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .first_story {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 30px;
+  }
+
+  .text_block {
+    width: 100%;
+    font-size: 16px;
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .image_wrapper {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .image_fox2 {
+    max-width: 100%;
+    max-height: 250px;
+    height: auto;
+  }
+
+  .variables.container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .btn_variant {
+    font-size: 16px;
+    padding: 16px;
+    width: 100%;
+    position: relative;
+  }
+
+  .gif_images {
+    height: 150px;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    margin-top: 10px;
+  }
+
+  .modal-content {
+    width: 90%;
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .close_btn {
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  footer.container {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer_text p,
+  .background_text {
+    font-size: 12px;
+  }
+
+  .background_text {
+    font-size: 20px;
+    opacity: 0.1;
+    position: static;
+  }
+}
